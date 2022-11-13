@@ -67,8 +67,8 @@ class _HomeState extends State<HomeScreen> with SingleTickerProviderStateMixin {
             ),
             Gap(AppLayout.getHeight(20)),
             TabbarHome(),
-            Gap(10),
-            Text(
+            const Gap(10),
+            const Text(
               'Recommended Furnitures',
               style: TextStyle(
                 color: Color(0XFF4A4543),
@@ -76,7 +76,7 @@ class _HomeState extends State<HomeScreen> with SingleTickerProviderStateMixin {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            Gap(10),
+            const Gap(10),
             SizedBox(
               height: MediaQuery.of(context).size.height - 160.0,
               width: double.infinity,
