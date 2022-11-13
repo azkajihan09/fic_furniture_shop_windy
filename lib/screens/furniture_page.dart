@@ -85,7 +85,7 @@ class FurniturePage extends StatelessWidget {
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           funit.name,
@@ -95,16 +95,75 @@ class FurniturePage extends StatelessWidget {
                               fontFamily: 'Varela',
                               fontSize: 14),
                         ),
-                        const Gap(10),
-                        Text(
-                          'Rp ${funit.price}',
-                          style: TextStyle(
-                              color: const Color(0xFFCC8053),
-                              fontFamily: 'Varela',
-                              fontSize: 16),
+
+                        // const Gap(5),
+                        // Text(
+                        //   'Rp ${funit.price}',
+                        //   style: TextStyle(
+                        //       color: const Color(0xFFCC8053),
+                        //       fontFamily: 'Varela',
+                        //       fontSize: 16),
+                        // ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Rp ${funit.price}',
+                              style: TextStyle(
+                                  color: const Color(0xFFCC8053),
+                                  fontFamily: 'Varela',
+                                  fontSize: 16),
+                            ),
+                            IconButton(
+                              icon: const Icon(
+                                Icons.star,
+                                color: Color(0xFF545D68),
+                                size: 20,
+                              ),
+                              onPressed: () {},
+                            ),
+                            const SizedBox(width: 8),
+                            Text(
+                              '${funit.rating}',
+                              style: const TextStyle(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0XFFBBBBBB),
+                              ),
+                            ),
+                          ],
                         ),
+                        // Text(
+                        //   'Rp ${funit.price}',
+                        //   style: TextStyle(
+                        //       color: const Color(0xFFCC8053),
+                        //       fontFamily: 'Varela',
+                        //       fontSize: 16),
+                        // ),
                       ],
                     ),
+                    // Row(
+                    //   crossAxisAlignment: CrossAxisAlignment.center,
+                    //   children: [
+                    //     IconButton(
+                    //       icon: const Icon(
+                    //         Icons.star,
+                    //         color: Color(0xFF545D68),
+                    //         size: 20,
+                    //       ),
+                    //       onPressed: () {},
+                    //     ),
+                    //     const SizedBox(width: 8),
+                    //     Text(
+                    //       '${funit.rating}',
+                    //       style: const TextStyle(
+                    //         fontSize: 12,
+                    //         fontWeight: FontWeight.w400,
+                    //         color: Color(0XFFBBBBBB),
+                    //       ),
+                    //     ),
+                    //   ],
+                    // )
                   ],
                 ),
               ),

@@ -23,7 +23,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 1,
     name: 'Stylish Chair',
-    price: '\200.000',
+    price: '\200',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.8,
@@ -33,7 +33,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 2,
     name: 'Modern Table',
-    price: '\300.000',
+    price: '\300',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
@@ -43,7 +43,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 5,
     name: 'Modern Table',
-    price: '\$200.000',
+    price: '\$200',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
@@ -53,7 +53,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 6,
     name: 'Wooden Console',
-    price: '\250.000',
+    price: '\250',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.7,
@@ -63,7 +63,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 3,
     name: 'Wooden Console',
-    price: '\240.000',
+    price: '\240',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.7,
@@ -73,11 +73,11 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 4,
     name: 'Brown Armchair',
-    price: '\210.000',
+    price: '\210',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
-    image: 'assets/images/chair5.png',
+    image: 'assets/images/img3.png',
     isFavorite: false,
   ),
 ];
