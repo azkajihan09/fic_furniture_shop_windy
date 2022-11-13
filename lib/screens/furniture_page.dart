@@ -105,27 +105,6 @@ class FurniturePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Center(
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Image.asset(
-                            'assets/icons/ic_star_filled.png',
-                            width: 15,
-                            height: 15,
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '${funit.rating}',
-                            style: const TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w400,
-                              color: Color(0XFFBBBBBB),
-                            ),
-                          ),
-                        ],
-                      ),
-                    )
                   ],
                 ),
               ),
