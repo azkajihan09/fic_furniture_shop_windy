@@ -42,8 +42,8 @@ final List<Furniture> listCakes = [
   ),
   Furniture(
     id: 5,
-    name: 'Modern Table',
-    price: '\$200',
+    name: 'Modern chair',
+    price: '\200',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
