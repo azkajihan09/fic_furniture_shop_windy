@@ -13,8 +13,6 @@ class _BottomBarState extends State<BottomBar> {
   int _selectedindex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreen(),
-    // const ScearchScreen(),
-
     const Text('Store'),
     const Text('Star'),
     const Text('Profile'),
@@ -31,9 +29,6 @@ class _BottomBarState extends State<BottomBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text('My Tikets'),
-      // ),
       body: Center(child: _widgetOptions[_selectedindex]),
       bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedindex,

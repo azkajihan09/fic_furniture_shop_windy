@@ -24,7 +24,6 @@ class FurniturePage extends StatelessWidget {
           ),
           itemBuilder: (context, index) {
             return _buildCard(listCakes[index], context);
-            // return _buildCard(listCakes[index], context);
           },
           itemCount: listCakes.length,
         ),
@@ -63,26 +62,6 @@ class FurniturePage extends StatelessWidget {
           child: ListView(
             physics: const NeverScrollableScrollPhysics(),
             children: [
-              // Padding(
-              //   padding: EdgeInsets.only(
-              //     right: 8,
-              //     top: 8,
-              //   ),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.end,
-              //     children: [
-              //       funit.isFavorite
-              //           ? const Icon(
-              //               Icons.favorite,
-              //               color: Color(0xFFEF7532),
-              //             )
-              //           : const Icon(
-              //               Icons.favorite_border,
-              //               color: Color(0xFFEF7532),
-              //             )
-              //     ],
-              //   ),
-              // ),
               Container(
                 height: 163,
                 decoration: BoxDecoration(
@@ -97,16 +76,6 @@ class FurniturePage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 8),
-
-              // Center(
-              //   child: Text(
-              //     'Rp ${funit.price}',
-              //     style: TextStyle(
-              //         color: const Color(0xFFCC8053),
-              //         fontFamily: 'Varela',
-              //         fontSize: 16),
-              //   ),
-              // ),
               Padding(
                 padding:
                     const EdgeInsets.only(left: 14, right: 18.0, bottom: 12.0),
@@ -160,72 +129,6 @@ class FurniturePage extends StatelessWidget {
                   ],
                 ),
               ),
-
-              // Padding(
-              //   padding: EdgeInsets.all(8.0),
-              //   child: Container(
-              //     color: const Color(0xFFEBEBEB),
-              //     height: 1.0,
-              //   ),
-              // ),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(horizontal: 4),
-              //   child: Row(
-              //     mainAxisAlignment: MainAxisAlignment.center,
-              //     children: [
-              //       Row(
-              //         children: [
-              //           Icon(
-              //             Icons.chat,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16,
-              //           ),
-              //           SizedBox(
-              //             width: 8,
-              //           ),
-              //           Text(
-              //             'Chat',
-              //             style: TextStyle(
-              //                 fontFamily: 'Varela',
-              //                 color: const Color(0xFFD17E50),
-              //                 fontSize: 12),
-              //           ),
-              //         ],
-              //       ),
-              //       SizedBox(
-              //         width: 16,
-              //       ),
-              //       Row(
-              //         children: [
-              //           Icon(
-              //             Icons.remove_circle_outline,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16,
-              //           ),
-              //           SizedBox(
-              //             width: 8,
-              //           ),
-              //           Text(
-              //             '3',
-              //             style: TextStyle(
-              //                 fontFamily: 'Varela',
-              //                 color: const Color(0xFFD17E50),
-              //                 fontWeight: FontWeight.bold,
-              //                 fontSize: 12),
-              //           ),
-              //           SizedBox(
-              //             width: 8,
-              //           ),
-              //           Icon(
-              //             Icons.add_circle_outline,
-              //             color: const Color(0xFFD17E50),
-              //             size: 16,
-              //           ),
-              //         ],
-              //       ),
-              //     ],
-              //   ),
-              // ),
             ],
           ),
         ),

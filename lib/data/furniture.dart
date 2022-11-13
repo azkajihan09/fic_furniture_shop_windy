@@ -10,12 +10,6 @@ class Furniture {
 
   Furniture({
     required this.id,
-//     required this.name,
-//     required this.price,
-//     required this.description,
-//     required this.isFavorite,
-//     required this.subMenu,
-
     required this.name,
     required this.price,
     required this.description,
@@ -24,21 +18,6 @@ class Furniture {
     required this.image,
   });
 }
-// class Furniture {
-//   final int id;
-//   final String name, price, description, image;
-//   bool isFavorite;
-//   final double rating;
-
-//   Furniture({
-//     required this.id,
-//     required this.name,
-//     required this.price,
-//     required this.description,
-//     required this.isFavorite,
-//     required this.rating,
-//     required this.image,
-//   });
 
 final List<Furniture> listCakes = [
   Furniture(
@@ -54,7 +33,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 2,
     name: 'Modern Table',
-    price: '\$75',
+    price: '\300.000',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
@@ -64,7 +43,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 5,
     name: 'Modern Table',
-    price: '\$75',
+    price: '\$200.000',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
@@ -74,7 +53,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 6,
     name: 'Wooden Console',
-    price: '\$240',
+    price: '\250.000',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.7,
@@ -84,7 +63,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 3,
     name: 'Wooden Console',
-    price: '\$240',
+    price: '\240.000',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.7,
@@ -94,7 +73,7 @@ final List<Furniture> listCakes = [
   Furniture(
     id: 4,
     name: 'Brown Armchair',
-    price: '\$210',
+    price: '\210.000',
     description:
         'Curabitur commodo turpis id placerat mattis. Mauris euismod arcu id orci fringilla sodales. Proin congue eleifend ipsum, eleifend porttitor mi ullamcorper.',
     rating: 4.9,
