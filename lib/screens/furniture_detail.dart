@@ -1,4 +1,5 @@
 import 'package:fic_furniture_shop_windy/screens/view/furniture_name_and_price.dart';
+import 'package:fic_furniture_shop_windy/screens/view/furniture_rating.dart';
 import 'package:fic_furniture_shop_windy/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -8,16 +9,20 @@ class FurnitureDetail extends StatelessWidget {
   final String cookieprice;
   final String cookiename;
 
+  final double cookierating;
+
   const FurnitureDetail({
     Key? key,
     required this.assetPath,
     required this.cookieprice,
     required this.cookiename,
+    required this.cookierating,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
@@ -97,6 +102,10 @@ class FurnitureDetail extends StatelessWidget {
                   FurnitureNameAndPrice(
                     cookiename: cookiename,
                     cookieprice: cookieprice,
+                  ),
+                  Gap(10),
+                  FurnitureRating(
+                    cookierating: cookierating,
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(

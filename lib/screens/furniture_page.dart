@@ -44,6 +44,10 @@ class FurniturePage extends StatelessWidget {
               assetPath: funit.image,
               cookieprice: funit.price,
               cookiename: funit.name,
+              cookierating: funit.rating,
+
+              
+              
             );
           }));
         },

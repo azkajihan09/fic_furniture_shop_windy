@@ -28,7 +28,7 @@ class FurnitureNameAndPrice extends StatelessWidget {
             ),
           ),
           Text(
-            cookieprice,
+            'Rp ${cookieprice}',
             style: const TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w400,
