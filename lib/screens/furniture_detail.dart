@@ -66,20 +66,18 @@ class FurnitureDetail extends StatelessWidget {
       ),
       body: Column(
         children: [
-          Container(
-            height: 500,
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(32),
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(assetPath),
+          Expanded(
+            child: Container(
+              height: 500,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(32),
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage(assetPath),
+                ),
               ),
             ),
-          ),
-          FurnitureNameAndPrice(
-            cookiename: cookiename,
-            cookieprice: cookieprice,
           ),
           Expanded(
             child: Container(
@@ -96,6 +94,10 @@ class FurnitureDetail extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  FurnitureNameAndPrice(
+                    cookiename: cookiename,
+                    cookieprice: cookieprice,
+                  ),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 14.0,
