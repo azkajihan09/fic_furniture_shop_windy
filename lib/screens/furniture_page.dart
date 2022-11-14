@@ -79,24 +79,42 @@ class FurniturePage extends StatelessWidget {
               Padding(
                 padding:
                     const EdgeInsets.only(left: 14, right: 18.0, bottom: 12.0),
+                child: Text(
+                  funit.name,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                      color: const Color(0xFF575E67),
+                      // fontFamily: 'Varela',
+                      fontSize: 14),
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.only(left: 20, right: 20, bottom: 20.0),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          funit.name,
-                          overflow: TextOverflow.ellipsis,
-                          style: TextStyle(
-                              color: const Color(0xFF575E67),
-                              fontFamily: 'Varela',
-                              fontSize: 14),
-                        ),
+                    // Text(
+                    //   funit.name,
+                    //   overflow: TextOverflow.ellipsis,
+                    //   style: TextStyle(
+                    //       color: const Color(0xFF575E67),
+                    //       fontFamily: 'Varela',
+                    //       fontSize: 14),
+                    // ),
 
-                        // const Gap(5),
+                    // const Gap(5),
+                    Text(
+                      'Rp ${funit.price}',
+                      style: TextStyle(
+                          color: const Color(0xFFCC8053),
+                          // fontFamily: 'Varela',
+                          fontSize: 16),
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
                         // Text(
                         //   'Rp ${funit.price}',
                         //   style: TextStyle(
@@ -104,44 +122,33 @@ class FurniturePage extends StatelessWidget {
                         //       fontFamily: 'Varela',
                         //       fontSize: 16),
                         // ),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              'Rp ${funit.price}',
-                              style: TextStyle(
-                                  color: const Color(0xFFCC8053),
-                                  fontFamily: 'Varela',
-                                  fontSize: 16),
-                            ),
-                            IconButton(
-                              icon: const Icon(
-                                Icons.star,
-                                color: Color(0xFF545D68),
-                                size: 20,
-                              ),
-                              onPressed: () {},
-                            ),
-                            const SizedBox(width: 8),
-                            Text(
-                              '${funit.rating}',
-                              style: const TextStyle(
-                                fontSize: 12,
-                                fontWeight: FontWeight.w400,
-                                color: Color(0XFFBBBBBB),
-                              ),
-                            ),
-                          ],
+                        IconButton(
+                          icon: const Icon(
+                            Icons.star,
+                            color: Color(0xFF545D68),
+                            size: 20,
+                          ),
+                          onPressed: () {},
                         ),
-                        // Text(
-                        //   'Rp ${funit.price}',
-                        //   style: TextStyle(
-                        //       color: const Color(0xFFCC8053),
-                        //       fontFamily: 'Varela',
-                        //       fontSize: 16),
-                        // ),
+                        const SizedBox(width: 1),
+                        Text(
+                          '${funit.rating}',
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0XFFBBBBBB),
+                          ),
+                        ),
                       ],
                     ),
+                    // Text(
+                    //   'Rp ${funit.price}',
+                    //   style: TextStyle(
+                    //       color: const Color(0xFFCC8053),
+                    //       fontFamily: 'Varela',
+                    //       fontSize: 16),
+                    // ),
+
                     // Row(
                     //   crossAxisAlignment: CrossAxisAlignment.center,
                     //   children: [

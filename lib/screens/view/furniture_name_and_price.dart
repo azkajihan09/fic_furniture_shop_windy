@@ -2,13 +2,13 @@ import 'package:fic_furniture_shop_windy/data/furniture.dart';
 import 'package:flutter/material.dart';
 
 class FurnitureNameAndPrice extends StatelessWidget {
-  final String furniturename;
-  final String furnitureprice;
+  final String cookieprice;
+  final String cookiename;
 
   const FurnitureNameAndPrice({
     Key? key,
-    required this.furniturename,
-    required this.furnitureprice,
+    required this.cookieprice,
+    required this.cookiename,
   }) : super(key: key);
 
   @override
@@ -20,7 +20,7 @@ class FurnitureNameAndPrice extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            furniturename,
+            cookiename,
             style: const TextStyle(
               color: Color(0XFF4A4543),
               fontSize: 22,
@@ -28,9 +28,9 @@ class FurnitureNameAndPrice extends StatelessWidget {
             ),
           ),
           Text(
-            furnitureprice,
+            cookieprice,
             style: const TextStyle(
-              fontSize: 26,
+              fontSize: 20,
               fontWeight: FontWeight.w400,
               color: Color(0XFF9A9390),
             ),

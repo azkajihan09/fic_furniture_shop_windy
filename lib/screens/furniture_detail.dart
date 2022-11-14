@@ -77,6 +77,10 @@ class FurnitureDetail extends StatelessWidget {
               ),
             ),
           ),
+          FurnitureNameAndPrice(
+            cookiename: cookiename,
+            cookieprice: cookieprice,
+          ),
           Expanded(
             child: Container(
               height: height,
